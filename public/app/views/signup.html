@@ -1,0 +1,45 @@
+
+
+
+
+
+
+
+        <div ng-controller="SignupCtrl" style="background-image: url(http://bgfons.com/upload/ornaments_texture1136.jpg); background-repeat: no-repeat; height: 675px;">
+        <div class="container" align="center" style="background-color: white;"><br><br><br>
+        <h1 style="color: #888; font-weight: bold; text-align: center;">Sign Up</h1><br><br>
+        <form>
+            <div class="form-group row">
+                <label class="col-md-offset-2 col-md-3" style="font-size: 30px; color: #888">Name</label>
+                <input type="text" class="form-control col-md-6" placeholder="Enter your name" style="width: 400px;" ng-model="user.name">
+            </div>
+            <br>
+            <div class="form-group row">
+                <label class="col-md-offset-2 col-md-3" style="font-size: 30px; color: #888">E-Mail ID</label>
+                <input type="email" class="form-control col-md-6" placeholder="Enter your e-mail id" style="width: 400px;" ng-model="user.mail">
+            </div>
+            <br>
+            <div class="form-group row">
+                <label class="col-md-offset-2 col-md-3" style="font-size: 30px; color: #888">Phone No.</label>
+                <input type="tel" class="form-control col-md-6" placeholder="Enter your phone no." style="width: 400px;" ng-model="user.phone">
+            </div>
+            <br>
+            <div class="form-group row">
+                <label class="col-md-offset-2 col-md-3" style="font-size: 30px; color: #888">Password</label>
+                <input type="password" class="form-control col-md-6" placeholder="Enter your password" style="width: 400px;" ng-model="user.password">
+            </div>
+            <br>
+            <div class="form-group row">
+                <label class="col-md-offset-1 col-md-4" style="font-size: 30px; color: #888">Confirm Password</label>
+                <input type="password" class="form-control col-md-6" placeholder="Re-enter your password" style="width: 400px;">
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary center-block" ng-click="signup(user)">Done</button>
+        </form>
+        <br><br><br>
+        </div>
+
+
+
+
+

@@ -1,0 +1,27 @@
+
+
+
+    <div ng-controller="EditPostCtrl" style="background-image: url(http://bgfons.com/upload/ornaments_texture1136.jpg); background-repeat: no-repeat; height: 675px;">
+    <div class="container" align="center" style="background-color: white;"><br>
+        <h1 style="color: #888; font-weight: bold; text-align: center;">Edit Post</h1><br><br>
+        <form>
+            <div class="form-group row">
+                <label class="col-md-offset-2 col-md-3" style="font-size: 30px; color: #888">Title</label>
+                <input type="text" class="form-control col-md-6" placeholder="Enter the titile" style="width: 400px;" ng-model="post1.title">
+            </div>
+            <br><br>
+            <div class="form-group row">
+                <label class="col-md-offset-2 col-md-3" style="font-size: 30px; color: #888">Image URL</label>
+                <input type="text" class="form-control col-md-6" placeholder="Enter the image url" style="width: 400px;" ng-model="post1.url">
+            </div>
+            <br><br>
+            <div class="form-group row">
+                <label class="col-md-offset-2 col-md-3" style="font-size: 30px; color: #888">Message</label>
+                <textarea type="text" class="form-control col-md-6" placeholder="Enter the message" style="width: 400px; height: 200px;" cols="10" ng-model="post1.body"></textarea>
+            </div>
+            <br><br>
+            <button type="submit" class="btn btn-primary center-block" ng-click="editBlog(post1)">Edit</button>
+        </form>
+        <br><br>
+    </div>
+    </div>

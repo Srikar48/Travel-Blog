@@ -1,0 +1,37 @@
+
+
+
+
+
+	<div class="container-fluid" ng-controller="LoginCtrl" style="background-image: url(http://bgfons.com/upload/ornaments_texture1136.jpg); background-repeat: no-repeat; height: 950px; color: white;">
+
+		<br><br><br><br>
+		<div class="text-center" style="font-size: 50px; letter-spacing: 3px; font-family: 'courier new';">This is Srikar's travel blog!</div>
+		<div class="row text-center" style="position: absolute; top: 50%;">
+		<div class="col-md-7" style="padding: 30px;">
+		<br>
+		<h2>"The real voyage of discovery consists not in seeking new landscapes, but in having new eyes."</h2>
+		<h5 class="text-right" style="position: relative; left: -20px;">-Marcel Proust</h5>
+		</div>
+		<div class="col-md-5" style="padding: 10px; border-left: 1px solid white; padding-right: 30px;">
+		<h2 style="margin: 15px;">Check out my blog!</h2>
+			<div class="input-group" style="margin: 15px;">
+				<span class="input-group-addon"><i class="fa fa-fw fa-envelope-o"></i></span>
+				<input class="form-control" type="text" placeholder="Email Address" ng-model="users.mail">
+			</div>
+			<div class="input-group" style="margin: 15px;">
+				<span class="input-group-addon"><i class="fa fa-fw fa-lock"></i></span>
+				<input class="form-control" type="password" placeholder="Password" ng-model="users.password">
+			</div>
+			<button class="btn btn-primary" style="margin: 15px;" ng-click="submit(users)">Log In</button>
+			<button class="btn btn-primary" style="margin: 15px;" ng-click="signup()">Sign Up</button>
+			<div ng-if="flag" class="text-danger" style="background-color: white; margin-left:150px; margin-right: 150px;">* Invalid Username or Password</div>
+		</div>
+		</div>
+
+	</div>
+
+
+
+
+
